@@ -22,6 +22,7 @@ VHOST=$(cat <<EOF
 </VirtualHost>
 EOF
 )
+# ADD VirtualHost to apache configs
 echo "${VHOST}" > /etc/apache2/sites-available/000-default.conf
 
 
